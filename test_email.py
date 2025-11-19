@@ -1,5 +1,4 @@
 import datetime
-import pprint
 import math
 
 email1 = {
