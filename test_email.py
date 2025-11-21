@@ -147,8 +147,8 @@ number_of_pages = math.ceil(len(email["sent_text"]) / 500)
 12. Проверьте пустоту темы и тела письма: создайте переменные is_subject_empty, is_body_empty в котором будет 
 хранится что тема письма содержит данные.
 """
-subject_empty = email["subject"] = ""
-body_empty = email["body"] = ""
+is_subject_empty = not email["subject"].strip()
+is_body_empty = not email["body"].strip()
 
 
 """
